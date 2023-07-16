@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Bankist App</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo-text">Login to get started</div>
+            <img src="images/logo.jpeg" alt="logo" class="logo-image">
+            <div class="login__container">
+                <input placeholder="user" type="text" class="login-field login-user" />
+                <input placeholder="pin" maxlength="4" type="text" class="login-field login-pin" />
+                <svg class="login-btn" xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="M11.293 4.707 17.586 11H4v2h13.586l-6.293 6.293 1.414 1.414L21.414 12l-8.707-8.707-1.414 1.414z"/></svg>
+            </div>
+
+        </nav>
+    </header>
+    <!-----------Current Balance Container------------->
+    <div class="main-container">
+        <div class="currentbalance-container">
+            <div class="balance-info">
+                <div class="balance-info-heading">Current Balance</div>
+                <div class="balance-info-date">As of <span>05/03/2012</span></div>
+            </div>
+            <div class="balance-amount">
+                <div class="balance-amount-show">0000</div>
+                <div class="balance-amount-currency">$</div>
+            </div>
+
+        </div>
+        <div class="details-container">
+            <div class="transaction-list-container">
+                <div class="transaction-container">
+                    <div class="transaction-type"><span>1 </span>deposit</div>
+
+                    <div class="transaction-date">24/01/2022</div>
+                    <div class="transaction-amount">2000$</div>
+
+                </div>
+                <hr>
+                <div class="transaction-container">
+                    <div class="transaction-type"><span>2 </span>withdrawal</div>
+                    <div class="transaction-amount">500$</div>
+                </div>
+                <hr>
+                <div class="transaction-container">
+                    <div class="transaction-type"><span>3 </span>deposit</div>
+                    <div class="transaction-amount">100$</div>
+                </div>
+                <hr>
+            </div>
+            <div class="banking-actions">
+                <div class="  action-pane action-transfer">
+                    <p class="heading">Transfer money</p>
+                    <div class="transfer-container">
+                        <input placeholder="Transfer to" type="text" class="transfer-to " />
+                        <input placeholder="Amount" type="number" class="amount transfer-amount" />
+                        <svg class="actions-btn transfer-btn" xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="M11.293 4.707 17.586 11H4v2h13.586l-6.293 6.293 1.414 1.414L21.414 12l-8.707-8.707-1.414 1.414z"/></svg>
+                    </div>
+
+                </div>
+                <div class=" action-pane action-withdraw">
+                    <p class="heading">Deposit money</p>
+                    <div class="transfer-container">
+                        <input placeholder="Amount" type="text" class="amount deposit-amount" />
+                        <svg class="actions-btn deposit-btn" xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="M11.293 4.707 17.586 11H4v2h13.586l-6.293 6.293 1.414 1.414L21.414 12l-8.707-8.707-1.414 1.414z"/></svg>
+
+                    </div>
+                </div>
+                <div class=" action-pane action-requestloan">
+                    <p class="heading">Close Account</p>
+
+                    <div class="transfer-container">
+                        <input placeholder="user" type="text" class="amount close-username" />
+                        <input placeholder="pin" type="text" class="amount close-pin" />
+                        <svg class="actions-btn account-close-btn" xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="M11.293 4.707 17.586 11H4v2h13.586l-6.293 6.293 1.414 1.414L21.414 12l-8.707-8.707-1.414 1.414z"/></svg>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="summary-container">
+            <div class="summary-detail-pane TotalDeposits">
+                <h3 style="color: green">TotalDeposits</h3>
+                <p>500$</p>
+            </div>
+            <div class=" summary-detail-pane TotalWithdrawals">
+                <h3 style="color: rgb(236, 12, 12)">TotalWithdrawals</h3>
+                <p>1000$</p>
+            </div>
+            <div class=" summary-detail-pane TotalInterests">
+                <h3 style="color: rgb(216, 106, 3)">TotalInterests</h3>
+                <p>10.09$</p>
+            </div>
+            <div class="summary-detail-pane sort-pane">
+                <button class="sort">Sort <svg sort-arrow fill="#000000" height="200px" width="200px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 493.472 493.472" xml:space="preserve"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <g> <path d="M246.738,0C110.69,0,0.01,110.692,0.01,246.732c0,136.064,110.68,246.74,246.728,246.74s246.724-110.676,246.724-246.74 C493.462,110.692,382.786,0,246.738,0z M361.094,296.68l-8.964,8.972c-2.02,2.012-5.564,2.012-7.576,0l-94.932-94.924 c-0.752-0.756-1.736-1.132-2.72-1.132s-1.976,0.376-2.732,1.132l-94.784,94.768c-2.004,1.996-5.548,1.996-7.56,0l-8.972-8.972 c-2.08-2.076-2.08-5.48,0-7.552l110.16-110.156c0.996-0.984,2.332-1.532,3.996-1.532c1.436,0,2.78,0.548,3.764,1.532 L361.09,289.128C363.174,291.212,363.174,294.604,361.094,296.68z"></path> </g> </g> </g></svg></button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
